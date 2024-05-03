@@ -1,0 +1,265 @@
+
+
+Assign 1 : Basic Linux Commands
+
+
+pranav@pranav-Predator-PT315-52:~$ ls uname
+ls: cannot access 'uname': No such file or directory
+pranav@pranav-Predator-PT315-52:~$ pwd
+/home/sunbeam
+pranav@pranav-Predator-PT315-52:~$ uname
+Linux
+pranav@pranav-Predator-PT315-52:~$ hostname
+sunbeam-Lenovo-ideapad-310-15IKB
+pranav@pranav-Predator-PT315-52:~$ date
+Friday 03 May 2024 04:56:37 PM IST
+pranav@pranav-Predator-PT315-52:~$ cal
+Command 'cal' not found, but can be installed with:
+sudo apt install ncal
+pranav@pranav-Predator-PT315-52:~$ ls
+ Arduino        Downloads                Public      STM32CubeIDE
+ Day1_1.ipynb   Music                    snap        Templates
+ Desktop        packages.microsoft.gpg   softwares  'Untitled Document 1'
+ Documents      Pictures                 STM32Cube   Videos
+pranav@pranav-Predator-PT315-52:~$ dir
+Arduino       Downloads		      Public	 STM32CubeIDE
+Day1_1.ipynb  Music		      snap	 Templates
+Desktop       packages.microsoft.gpg  softwares  Untitled\ Document\ 1
+Documents     Pictures		      STM32Cube  Videos
+pranav@pranav-Predator-PT315-52:~$ cat
+Hi this is sandesh thite                           
+Hi this is sandesh thite
+
+
+^C
+pranav@pranav-Predator-PT315-52:~$ cat > cat.txt
+hi this is sandesh
+pranav@pranav-Predator-PT315-52:~$ cat >> cat.txt
+welcome to sunbeampranav@pranav-Predator-PT315-52:~$ 
+pranav@pranav-Predator-PT315-52:~$ cat > cat.txt
+pranav@pranav-Predator-PT315-52:~$ cat >> cat.txt
+pranav@pranav-Predator-PT315-52:~$ cat cat.txt
+pranav@pranav-Predator-PT315-52:~$ cat
+^C
+pranav@pranav-Predator-PT315-52:~$ cat > cat.txt
+asdfghjkbvcxcv
+^C
+pranav@pranav-Predator-PT315-52:~$ cat cat.txt
+asdfghjkbvcxcv
+pranav@pranav-Predator-PT315-52:~$ cat >> cat.txt
+sandesh is my friendpranav@pranav-Predator-PT315-52:~$ 
+pranav@pranav-Predator-PT315-52:~$ cat cat.txt
+asdfghjkbvcxcv
+sandesh is my friendpranav@pranav-Predator-PT315-52:~$ mkdir dir1
+pranav@pranav-Predator-PT315-52:~$ cp cat.txt dir1
+pranav@pranav-Predator-PT315-52:~$ ls
+ Arduino        Documents                Public         Templates
+ cat.txt        Downloads                snap          'Untitled Document 1'
+ Day1_1.ipynb   Music                    softwares      Videos
+ Desktop        packages.microsoft.gpg   STM32Cube
+ dir1           Pictures                 STM32CubeIDE
+pranav@pranav-Predator-PT315-52:~$ mv cat.txt copy.txt
+pranav@pranav-Predator-PT315-52:~$ ls
+ Arduino        Documents                Public         Templates
+ copy.txt       Downloads                snap          'Untitled Document 1'
+ Day1_1.ipynb   Music                    softwares      Videos
+ Desktop        packages.microsoft.gpg   STM32Cube
+ dir1           Pictures                 STM32CubeIDE
+pranav@pranav-Predator-PT315-52:~$ cd dir1/
+pranav@pranav-Predator-PT315-52:~/dir1$ ls
+cat.txt
+pranav@pranav-Predator-PT315-52:~/dir1$ cd
+pranav@pranav-Predator-PT315-52:~$ rm cat.txt
+rm: cannot remove 'cat.txt': No such file or directory
+pranav@pranav-Predator-PT315-52:~$ cd dir1/
+pranav@pranav-Predator-PT315-52:~/dir1$ rm cat.txt 
+pranav@pranav-Predator-PT315-52:~/dir1$ rm -R dir1
+rm: cannot remove 'dir1': No such file or directory
+pranav@pranav-Predator-PT315-52:~/dir1$ cd
+pranav@pranav-Predator-PT315-52:~$ rm -R dir1/
+pranav@pranav-Predator-PT315-52:~$ ls
+ Arduino        Documents                Pictures    STM32Cube              Videos
+ copy.txt       Downloads                Public      STM32CubeIDE
+ Day1_1.ipynb   Music                    snap        Templates
+ Desktop        packages.microsoft.gpg   softwares  'Untitled Document 1'
+pranav@pranav-Predator-PT315-52:~$ touch file.txt
+pranav@pranav-Predator-PT315-52:~$ ls
+ Arduino        Downloads                Public         Templates
+ copy.txt       file.txt                 snap          'Untitled Document 1'
+ Day1_1.ipynb   Music                    softwares      Videos
+ Desktop        packages.microsoft.gpg   STM32Cube
+ Documents      Pictures                 STM32CubeIDE
+pranav@pranav-Predator-PT315-52:~$ sort
+copy.txt
+file,txt
+copy.txt
+file,txt
+pranav@pranav-Predator-PT315-52:~$ cat >> copy.txt
+sunbeam institute desd course
+this is sandesh thite
+devendra sir  embedede operating system
+hi welcome to desd coursepranav@pranav-Predator-PT315-52:~$ 
+pranav@pranav-Predator-PT315-52:~$ 
+pranav@pranav-Predator-PT315-52:~$ sort copy.txt
+asdfghjkbvcxcv
+devendra sir  embedede operating system
+hi welcome to desd course
+sandesh is my friendsunbeam institute desd course
+this is sandesh thite
+pranav@pranav-Predator-PT315-52:~$ uniq copy.txt 
+asdfghjkbvcxcv
+sandesh is my friendsunbeam institute desd course
+this is sandesh thite
+devendra sir  embedede operating system
+hi welcome to desd course
+pranav@pranav-Predator-PT315-52:~$ head copy.txt
+asdfghjkbvcxcv
+sandesh is my friendsunbeam institute desd course
+this is sandesh thite
+devendra sir  embedede operating system
+hi welcome to desd coursepranav@pranav-Predator-PT315-52:~$ head -2 copy.txt 
+asdfghjkbvcxcv
+sandesh is my friendsunbeam institute desd course
+pranav@pranav-Predator-PT315-52:~$ tail -3 copy.txt 
+this is sandesh thite
+devendra sir  embedede operating system
+hi welcome to desd coursepranav@pranav-Predator-PT315-52:~$ factor
+pranav@pranav-Predator-PT315-52:~$ factor copy.txt
+factor: ‘copy.txt’ is not a valid positive integer
+pranav@pranav-Predator-PT315-52:~$ factor 6
+6: 2 3
+pranav@pranav-Predator-PT315-52:~$ alias -p
+alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
+alias egrep='egrep --color=auto'
+alias fgrep='fgrep --color=auto'
+alias grep='grep --color=auto'
+alias l='ls -CF'
+alias la='ls -A'
+alias ll='ls -alF'
+alias ls='ls --color=auto'
+pranav@pranav-Predator-PT315-52:~$ alias la='ls -A'
+pranav@pranav-Predator-PT315-52:~$ ls -A
+ Arduino         .gnupg                   STM32Cube
+ .arduino15      .ipynb_checkpoints       .stm32cubeide
+ .arduinoIDE     .ipython                 STM32CubeIDE
+ .bash_history   .java                    .stm32cubemx
+ .bash_logout    .jupyter                 .stmcube
+ .bashrc         .lesshst                 .stmcufinder
+ .bashrc.swp     .local                   .sudo_as_admin_successful
+ .cache          .mozilla                 .swt
+ .config         Music                    Templates
+ copy.txt        .mysql_history           .th-client
+ Day1_1.ipynb    packages.microsoft.gpg   .thunderbird
+ Desktop         Pictures                'Untitled Document 1'
+ Documents       .pki                     Videos
+ .dotnet         .profile                 .viminfo
+ Downloads       Public                   .vimrc
+ .eclipse        snap                     .vscode
+ file.txt        softwares                .wget-hsts
+ .gitconfig      .ssh
+pranav@pranav-Predator-PT315-52:~$ unlias -A
+unlias: command not found
+pranav@pranav-Predator-PT315-52:~$ unalias -A
+bash: unalias: -A: invalid option
+unalias: usage: unalias [-a] name [name ...]
+pranav@pranav-Predator-PT315-52:~$ ls -A
+ Arduino         .gnupg                   STM32Cube
+ .arduino15      .ipynb_checkpoints       .stm32cubeide
+ .arduinoIDE     .ipython                 STM32CubeIDE
+ .bash_history   .java                    .stm32cubemx
+ .bash_logout    .jupyter                 .stmcube
+ .bashrc         .lesshst                 .stmcufinder
+ .bashrc.swp     .local                   .sudo_as_admin_successful
+ .cache          .mozilla                 .swt
+ .config         Music                    Templates
+ copy.txt        .mysql_history           .th-client
+ Day1_1.ipynb    packages.microsoft.gpg   .thunderbird
+ Desktop         Pictures                'Untitled Document 1'
+ Documents       .pki                     Videos
+ .dotnet         .profile                 .viminfo
+ Downloads       Public                   .vimrc
+ .eclipse        snap                     .vscode
+ file.txt        softwares                .wget-hsts
+ .gitconfig      .ssh
+pranav@pranav-Predator-PT315-52:~$ unalias -p
+bash: unalias: -p: invalid option
+unalias: usage: unalias [-a] name [name ...]
+pranav@pranav-Predator-PT315-52:~$ unalias p
+bash: unalias: p: not found
+pranav@pranav-Predator-PT315-52:~$ p
+p: command not found
+pranav@pranav-Predator-PT315-52:~$ ls -A
+ Arduino         .gnupg                   STM32Cube
+ .arduino15      .ipynb_checkpoints       .stm32cubeide
+ .arduinoIDE     .ipython                 STM32CubeIDE
+ .bash_history   .java                    .stm32cubemx
+ .bash_logout    .jupyter                 .stmcube
+ .bashrc         .lesshst                 .stmcufinder
+ .bashrc.swp     .local                   .sudo_as_admin_successful
+ .cache          .mozilla                 .swt
+ .config         Music                    Templates
+ copy.txt        .mysql_history           .th-client
+ Day1_1.ipynb    packages.microsoft.gpg   .thunderbird
+ Desktop         Pictures                'Untitled Document 1'
+ Documents       .pki                     Videos
+ .dotnet         .profile                 .viminfo
+ Downloads       Public                   .vimrc
+ .eclipse        snap                     .vscode
+ file.txt        softwares                .wget-hsts
+ .gitconfig      .ssh
+pranav@pranav-Predator-PT315-52:~$ echo
+
+pranav@pranav-Predator-PT315-52:~$ ps
+    PID TTY          TIME CMD
+   6014 pts/1    00:00:00 bash
+   6516 pts/1    00:00:00 ps
+pranav@pranav-Predator-PT315-52:~$ kill
+kill: usage: kill [-s sigspec | -n signum | -sigspec] pid | jobspec ... or kill -l [sigspec]
+pranav@pranav-Predator-PT315-52:~$ env
+SHELL=/bin/bash
+SESSION_MANAGER=local/sunbeam-Lenovo-ideapad-310-15IKB:@/tmp/.ICE-unix/1578,unix/sunbeam-Lenovo-ideapad-310-15IKB:/tmp/.ICE-unix/1578
+QT_ACCESSIBILITY=1
+COLORTERM=truecolor
+XDG_CONFIG_DIRS=/etc/xdg/xdg-ubuntu:/etc/xdg
+SSH_AGENT_LAUNCHER=gnome-keyring
+XDG_MENU_PREFIX=gnome-
+GNOME_DESKTOP_SESSION_ID=this-is-deprecated
+GTK_IM_MODULE=ibus
+LANGUAGE=en_IN:en
+GNOME_SHELL_SESSION_MODE=ubuntu
+SSH_AUTH_SOCK=/run/user/1000/keyring/ssh
+XMODIFIERS=@im=ibus
+DESKTOP_SESSION=ubuntu
+GTK_MODULES=gail:atk-bridge
+PWD=/home/sunbeam
+LOGNAME=sunbeam
+XDG_SESSION_DESKTOP=ubuntu
+XDG_SESSION_TYPE=x11
+GPG_AGENT_INFO=/run/user/1000/gnupg/S.gpg-agent:0:1
+SYSTEMD_EXEC_PID=1598
+XAUTHORITY=/run/user/1000/gdm/Xauthority
+WINDOWPATH=2
+HOME=/home/sunbeam
+USERNAME=sunbeam
+LANG=en_IN
+LS_COLORS=rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+XDG_CURRENT_DESKTOP=ubuntu:GNOME
+VTE_VERSION=6800
+GNOME_TERMINAL_SCREEN=/org/gnome/Terminal/screen/e6324630_0938_42c9_9f14_0ee9f69544b2
+LESSCLOSE=/usr/bin/lesspipe %s %s
+XDG_SESSION_CLASS=user
+TERM=xterm-256color
+LESSOPEN=| /usr/bin/lesspipe %s
+USER=sunbeam
+GNOME_TERMINAL_SERVICE=:1.111
+DISPLAY=:0
+SHLVL=1
+QT_IM_MODULE=ibus
+XDG_RUNTIME_DIR=/run/user/1000
+XDG_DATA_DIRS=/usr/share/ubuntu:/usr/share/gnome:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+PATH=/opt/st/stm32cubeide_1.15.0/plugins/com.st.stm32cube.ide.mcu.externaltools.gnu-tools-for-stm32.12.3.rel1.linux64_1.0.100.202403111256/tools/bin:/home/sunbeam/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin
+GDMSESSION=ubuntu
+DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/1000/bus
+_=/usr/bin/env
+OLDPWD=/home/sunbeam/dir1
+
