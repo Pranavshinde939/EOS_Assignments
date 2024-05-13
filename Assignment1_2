@@ -1,0 +1,78 @@
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four/five
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ rm -r /home/parimal/Desktop/Practice/one/two/four
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ cat > data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ wc data.txt
+ 10  25 148 data.txt
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep data.txt
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "files" data.txt
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep files *
+grep: two: Is a directory
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "files" *
+grep: two: Is a directory
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "LINUX" *
+grep: two: Is a directory
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "file" *
+data.txt:there are several types of file.
+grep: two: Is a directory
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "files" data.txt
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
+there are several types of file.
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ tail -n 3 data.txt
+Files have size.
+
+there are several types of file.pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ tail^C
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ head -n 2 data.txt
+Linux is open source
+
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ head -n 5 data.txt | tail -n 3
+in linux everything is File
+
+Files have permissions.
+pranav@pranav-Predator-PT315-52:~/Despranav@pranav-Predator-PT315-52:~/Despranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ g                             ^C
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "\.$" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+there are several types of file.
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "f" data.txt
+there are several types of file.
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep"^f" data.txt
+grep^f: command not found
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "have" data.txt
+Files have permissions.
+Files have inode no.
+Files have size.
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "files" data.txt
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep "file" data.txt
+there are several types of file.
+pranav@pranav-Predator-PT315-52:~/Desktop/Practice/one$ grep -v "files" data.txt
+Linux is open source
+
+in linux everything is File
+
+Files have permissions.
+
+Files have inode no.
+
+Files have size.
+
